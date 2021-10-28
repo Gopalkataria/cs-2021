@@ -3,19 +3,14 @@ using namespace std;
 
 int main()
 {
-    enum days
+    int a = 2, b = 3, sum = 0, prod = 0;
+    do
     {
-        monday,
-        tuesday,
-        wednesday,
-        thursday,
-        friday,
-        saturday,
-        sunday
-    };
-    for (int day = monday; day <= sunday; day++)
-        cout << day << endl;
-    days today = monday;
-    cout << today;
+        sum = a + b;
+        prod = a * b;
+        cout << sum << " " << prod << endl;
+        a++;
+        b++;
+    } while (sum < 10 && prod < 20);
     return 0;
 }
