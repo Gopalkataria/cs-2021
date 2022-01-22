@@ -45,13 +45,11 @@
             },
             "dependsOn": "C/C++: g++ build active file",
             "group": {
-                "kind": "test",
-                
+                "kind": "build",
                 "isDefault": true
             },
-
             "runOptions": {
-                "instanceLimit": 1,
+                "instanceLimit": 1
             },
             "options": {
                 "cwd": "${workspaceFolder}"
